@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Meatballs</title>
+		<link rel="stylesheet" type="text/css" href="BasicLayout.css"/>
+	</head>
+	
+	<body class = "bg">
+		<h1 class = "headline1">Tasty Receipes</h1>
+		
+		<ul class = "navigationBar">
+			<li class = "navigation"><a href = "MainPage.php">Main page</a></li>
+			<li class = "navigation"><a href = "Calender.php">Calender</a></li>
+			<li class = "navigation"><a href = "Meatballs.php">Meatball recipe</a></li>
+			<li class = "navigation"><a href = "Pancakes.php">Pancake recipe</a></li>
+		</ul>
+		
+		<div class = "center">
+		
+			<h1 class = "headline2">Meatballs</h1>
+			<img class = "stdImage" src = "spagetti.jpg" alt = "Image of sime meatballs"/>
+		
+		
+		<div class = "recipeCenter">
+				<p>Time: Forever, if you can't cook</p>
+				<p>Portions: 8-10</p>
+		</div>
+		
+			<h1 class = "headline3">Ingredients</h1>
+			<div class = "instructions">
+				<ul>
+					<li>Lots of meat</li>
+					<li>Spices. Look at a real cooking site for a specific quantity</li>
+					<li>4 gallons of milk</li>
+					<li>Tea spoon of water</li>
+				</ul>
+			</div>
+			
+			<h1 class = "headline4">If you are Findus or IKEA</h1>
+			<div class = "instructions">
+				<ul>
+					<li>Use primarily horse meat</li>
+				</ul>
+			</div>
+		
+			<h1 class = "headline3">Directions</h1>
+			<div class = "instructions">
+				<ul>
+					<li>Grind the meat like the children from Another Brick in the Wall</li>
+					<li>Pour on spices, milk, water and the all the other stuff that were omitted from the ingredient section</li>
+					<li>Voilá!</li>
+				</ul>
+			</div>
+		
+			<h1 class = "headline3">Comments</h1>
+			<p class = "comment">Maja: The recipe is incomplete.</p>
+			<p class = "comment">George: Tastes perfect!</p>
+			<p class = "comment">Findus: The access to horse meat is limited! Do you have any clever alternatives?</p>
+			
+			<textarea class = "textArea" name="aspirations" rows="3" cols="40" placeholder="Write your opinion or ask a question"></textarea>
+			
+			</div>
+	</body>
+</html>
