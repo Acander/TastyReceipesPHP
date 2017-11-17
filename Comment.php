@@ -38,6 +38,11 @@
 						echo $row['date']. "<br>";
 						echo $row['message']. "<br><br>";
 					echo "</div>";
+					echo "<form class = 'delete-form' method = 'POST' action ='deleteComment.php'>
+						<input type = 'hidden' name = 'c_id' value = '".$row['c_id']."'>
+						<input type = 'hidden' name = 'food' value = '$food'>
+						<button name = 'commentDelete'>Delete</button>
+						</form>";
 				}
 			
 		}
