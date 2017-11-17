@@ -45,7 +45,13 @@
 				include("Comment.php");
 				
 				getComments("Pancakes");
-				setComments("Pancakes");
+				
+				if(isset($_SESSION['id'])){
+					setComments("Pancakes");
+				}
+				else{
+					echo "<p>You need to be logged in to comment!</p>";
+				}
 			?>
 		
 		</div>

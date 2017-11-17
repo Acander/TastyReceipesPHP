@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,9 +13,21 @@
 	<body>
 	
 	<h1 class = "headline1">Tasty Receipes</h1>
-	<div class = "subline">
-		<a href = "index.php" class = "logIn">Log In</a>
-	</div>
+	
+	<?php
+		if(isset($_SESSION['e'])){
+			echo "<div class = 'subline'>
+				<form action = 'logout.php' method = 'POST'>
+					<button type = 'submit' name = 'submit' class = 'logOutButton'>Log Out</button>
+				</form>
+			</div>";
+		}
+		else{
+			echo "<div class = 'subline'>
+				<a href = 'index.php' class = 'logIn'>Log In</a>
+			</div>";
+		}
+	?>
 		
 		<ul class = "navigationBar">
 			<li class = "navigation"><a href = "MainPage.php">Main page</a></li>
