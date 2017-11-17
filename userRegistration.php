@@ -1,8 +1,5 @@
 <?php
 
-	include("UserRegister.php");
-	//include("dbLogInConfig.php");
-
 	if(isset($_POST["pressButton"])){
 		include_once("dbLogInConfig.php");
 		
@@ -27,7 +24,7 @@
 				exit();
 			}
 			else{
-				$sql = "INSERT INTO user (email, pwd) VALUES ($email, $pwd);";
+				$sql = "INSERT INTO user (email, pwd) VALUES ('$email', '$pwd');";
 				mysqli_query($conn, $sql);
 				header("Location: ../TastyRecepies/index.php");
 				exit();

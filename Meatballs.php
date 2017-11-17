@@ -49,11 +49,13 @@
 			</div>
 		
 			<h1 class = "headline3">Comments</h1>
-			<p class = "comment">Maja: The recipe is incomplete.</p>
-			<p class = "comment">George: Tastes perfect!</p>
-			<p class = "comment">Findus: The access to horse meat is limited! Do you have any clever alternatives?</p>
 			
-			<textarea class = "textArea" name="aspirations" rows="3" cols="40" placeholder="Write your opinion or ask a question"></textarea>
+			<?php
+				include("Comment.php");
+			
+				getComments("Meatballs");
+				setComments("Meatballs");
+			?>
 			
 			</div>
 	</body>
