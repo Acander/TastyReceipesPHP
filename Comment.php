@@ -17,7 +17,7 @@
 		
 		function setComments($food){
 			echo "<form method = 'POST' action= 'setComments.php' id='commentform'>
-				<input type = 'hidden' name = 'uid' value = 'anonymous'>
+				<input type = 'hidden' name = 'uid' value = '".$_SESSION['e']."'>
 				<input type = 'hidden' name = 'date' value = '".date('Y-m-d H:i:s')."'>
 				<input type = 'hidden' name = 'food' value = '$food'>
 				<textarea class = 'textArea' name='message' rows='3' cols='40' placeholder='Write your opinion or ask a question'></textarea>

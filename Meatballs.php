@@ -54,7 +54,12 @@
 				include("Comment.php");
 			
 				getComments("Meatballs");
-				setComments("Meatballs");
+				if(isset($_SESSION['e'])){
+					setComments("Meatballs");
+				}
+				else{
+					echo "<p>You need to be logged in to comment!</p>";
+				}
 			?>
 			
 			</div>

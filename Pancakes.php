@@ -46,7 +46,7 @@
 				
 				getComments("Pancakes");
 				
-				if(isset($_SESSION['id'])){
+				if(isset($_SESSION['e'])){
 					setComments("Pancakes");
 				}
 				else{
