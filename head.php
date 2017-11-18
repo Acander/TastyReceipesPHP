@@ -17,7 +17,7 @@
 	<?php
 		if(isset($_SESSION['e'])){
 			echo "<div class = 'subline'>
-				<form action = 'logout.php' method = 'POST'>
+				<form action = 'logout.php' method = 'POST' class = 'logOutButtonForm'>
 					<button type = 'submit' name = 'submit' class = 'logOutButton'>Log Out</button>
 				</form>
 			</div>";

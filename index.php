@@ -36,10 +36,7 @@
 			</div>
 
 			<div class="lastContainer">
-				<button type="button" class="cancelbtnLogIn">Cancel</button>
-				<div>
-					<span class="psw">Forgot <a href="#">password?</a></span>
-				</div>
+				<a href = 'MainPage.php' class="cancelbtnLogIn">Cancel</a>
 			</div>
 		</form>
 	

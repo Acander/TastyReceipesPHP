@@ -33,18 +33,28 @@
 			$result = mysqli_query($conn, $sql);
 			while($row = mysqli_fetch_assoc($result)){
 				if($row['dish'] == $food){
-					echo "<div class = 'comment-boxes'>";
-						echo $row['user_id']. "<br>";
-						echo $row['date']. "<br>";
-						echo $row['message']. "<br><br>";
-					echo "</div>";
 					
 					if(isset($_SESSION['e']) && $_SESSION['e'] == $row['user_id']){
-						echo "<form class = 'delete-form' method = 'POST' action ='deleteComment.php'>
+						echo "<div class = 'commentDiv'><div class = 'deletebox'>
+							<form class = 'delete-form' method = 'POST' action = 'deleteComment.php'>
 							<input type = 'hidden' name = 'c_id' value = '".$row['c_id']."'>
 							<input type = 'hidden' name = 'food' value = '$food'>
-							<button name = 'commentDelete'>Delete</button>
-							</form>";
+							<button class = 'commentDeleteButton' name = 'commentDelete'>Delete</button>
+							</form></div>";
+							
+							echo "<div class = 'comment'>";
+								echo $row['user_id']. "<br>";
+								echo $row['date']. "<br><div class = 'message'>Comment: ";
+								echo $row['message']. "</div><br><br>";
+							echo "</div></div>";
+							
+					}
+					else{
+						echo "<div class = 'comment-boxes'>";
+							echo $row['user_id']. "<br>";
+							echo $row['date']. "<br><div class = 'message'>Comment: ";
+							echo $row['message']. "</div><br><br>";
+						echo "</div>";
 					}
 					
 				}
