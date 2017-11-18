@@ -13,6 +13,7 @@
 		$resultCheck = mysqli_num_rows($result);
 		if($resultCheck < 1) {
 			header("Location: ../TastyRecepies/index.php?login=error");
+			echo "E-mail or password is incorrect";
 			exit();
 		}
 		else{

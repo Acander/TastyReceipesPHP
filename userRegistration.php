@@ -9,17 +9,15 @@
 		
 		//Error handlers
 		if(!($pwd == $pwdRe)){
-			echo "Please re-submit passwords";
 			header("Location: ../TastyRecepies/UserRegister.php?UserRegister=pwdFailure");
 			exit();
 		}
 		else{
-			$sql = "SELECT * FROM user WHERE email = 'email'";
+			$sql = "SELECT * FROM user WHERE email = '$email'";
 			$result = mysqli_query($conn, $sql);
 			$resultCheck = mysqli_num_rows($result);
 			
 			if($resultCheck > 0){
-				echo "E-mail already registrered";
 				header("Location: ../TastyRecepies/UserRegister.php?UserRegister=emailFailure");
 				exit();
 			}

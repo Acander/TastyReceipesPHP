@@ -25,6 +25,12 @@
 					<h1 class = "headline4">Password</h1>
 					<input type="password" placeholder="Enter Password" name="pwd" required>
 					
+					<?php
+						if(isset($_GET['login']) && $_GET['login']=='error'){
+							echo "<div class = 'errorMessage'>Wrong username or password!</div>";
+						}
+					?>
+					
 					<button type="submit" name="submit" class = "logInButton">Login</button>
 					<span>Not registered? <a href="UserRegister.php">Sign up</a></span>
 			</div>
