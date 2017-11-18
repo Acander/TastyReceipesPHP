@@ -22,7 +22,7 @@
 				
 				<?php
 					if(isset($_GET['UserRegister']) && $_GET['UserRegister'] == 'emailFailure'){
-						echo "<div class = 'errorMessage'>E-mail already in use<div>";
+						echo "<div class = 'errorMessage'>E-mail already in use</div>";
 					}
 				?>
 
@@ -41,8 +41,8 @@
 				<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
 				<div class = "buttonContainer">
-					<button type="button"  class="cancelbtnUserRegi">Cancel</button>
 					<button type="submit" class="signupbtn" name = "pressButton">Sign Up</button>
+					<a href = "index.php" class="cancelbtnUserRegi">Cancel</a>
 				</div>
 			</div>
 		</form>
