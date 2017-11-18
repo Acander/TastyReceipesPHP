@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>LogIn</title>
+		<title>Head</title>
 		<link rel="stylesheet" type="text/css" href="BasicLayout.css"/>
 	</head>
 	

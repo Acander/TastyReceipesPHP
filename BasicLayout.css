@@ -490,6 +490,26 @@ a.logIn:hover{
 	font-family: cursive;
 }
 
+/*Terms and Privacy*/
+
+.terms {
+	display: block;
+	background-color: rgb(200, 0, 0);
+	width: 20%;
+	margin: auto;
+	margin-bottom: 2%;
+	border: 2px solid black;
+	text-decoration: none;
+	font-family: cursive;
+	font-size: 100%;
+	color: black;
+	padding: 1% 2%;
+}
+
+.terms:hover{
+	background-color: rgb(150, 0, 0);
+}
+
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {

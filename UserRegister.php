@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>UserRegister</title>
+		<title>User Register</title>
 		<link rel="stylesheet" type="text/css" href="BasicLayout.css"/>
 	</head>
 	
@@ -38,7 +38,7 @@
 					}
 				?>
 				
-				<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+				<p>By creating an account you agree to our <a href="Terms&Conditions">Terms & Privacy</a>.</p>
 
 				<div class = "buttonContainer">
 					<button type="submit" class="signupbtn" name = "pressButton">Sign Up</button>
